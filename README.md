@@ -1,2 +1,2 @@
 # GrandChef - PHP Base Image
-Imagem base com php-fpm, composer, nginx.
+Imagem base com php-fpm e nginx.
