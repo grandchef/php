@@ -5,7 +5,7 @@ Imagem base com php-fpm e nginx.
 
 Criar imagem
 ```sh
-docker build -t grandchef/php:7.4.15-nginx deploy/nginx
+docker build -t grandchef/php:7.4.15-nginx nginx
 ```
 
 Roda o shell na imagem criada

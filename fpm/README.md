@@ -5,7 +5,7 @@ Imagem base para criação de container.
 
 Criar imagem base
 ```sh
-docker build -t grandchef/php:7.4.15-fpm-alpine deploy/php/fpm
+docker build -t grandchef/php:7.4.15-fpm-alpine fpm
 ```
 
 Roda o shell na imagem criada

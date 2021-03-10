@@ -5,7 +5,7 @@ Imagem base para build de aplicação php.
 
 Criar imagem base
 ```sh
-docker build -t grandchef/composer:2.7.4-parallel deploy/php/composer
+docker build -t grandchef/composer:2.7.4-parallel composer
 ```
 
 Roda o shell na imagem criada
