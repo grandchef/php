@@ -1,4 +1,4 @@
-FROM grandchef/php:7.4.15-fpm-alpine
+FROM fpm-alpine
 
 RUN touch /var/log/cron.log && \
     apk add --no-cache \
