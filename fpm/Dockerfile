@@ -1,4 +1,4 @@
-FROM php:7.4.15-fpm-alpine
+FROM php:7.4.19-fpm-alpine
 
 LABEL maintainer="Equipe grandChef <desenvolvimento@grandchef.com.br>"
 
@@ -28,6 +28,8 @@ RUN apk add --no-cache \
     && docker-php-ext-install -j$(nproc) gd \
     && yes '' | pecl install imagick \
     && docker-php-ext-enable imagick \
+    && pecl install redis \
+    && docker-php-ext-enable redis \
     && docker-php-ext-install -j$(nproc) \
     zip \
     bz2 \

@@ -5,17 +5,17 @@ Imagem base com php-fpm e nginx.
 
 Criar imagem
 ```sh
-docker build -t grandchef/php:7.4.15-nginx nginx
+docker build -t grandchef/php:7.4.19-nginx nginx
 ```
 
 Roda o shell na imagem criada
 ```sh
-docker run -it --rm grandchef/php:7.4.15-nginx /bin/bash
+docker run -it --rm grandchef/php:7.4.19-nginx /bin/bash
 ```
 
 ## Release
 
 Envia imagem para o hub.docker
 ```sh
-docker push grandchef/php:7.4.15-nginx
+docker push grandchef/php:7.4.19-nginx
 ```

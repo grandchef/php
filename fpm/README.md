@@ -5,17 +5,17 @@ Imagem base para criação de container.
 
 Criar imagem base
 ```sh
-docker build -t grandchef/php:7.4.15-fpm-alpine fpm
+docker build -t grandchef/php:7.4.19-fpm-alpine fpm
 ```
 
 Roda o shell na imagem criada
 ```sh
-docker run -it --rm grandchef/php:7.4.15-fpm-alpine /bin/sh
+docker run -it --rm grandchef/php:7.4.19-fpm-alpine /bin/sh
 ```
 
 ## Release
 
 Envia imagem para o hub.docker
 ```sh
-docker push grandchef/php:7.4.15-fpm-alpine
+docker push grandchef/php:7.4.19-fpm-alpine
 ```
