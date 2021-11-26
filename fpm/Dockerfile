@@ -1,4 +1,4 @@
-FROM php:7.4.19-fpm-alpine
+FROM php:7.4.26-fpm-alpine
 
 LABEL maintainer="Equipe grandChef <desenvolvimento@grandchef.com.br>"
 
