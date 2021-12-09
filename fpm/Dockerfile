@@ -20,6 +20,7 @@ RUN apk add --no-cache \
     libpng-dev \
     libzip \
     libzip-dev \
+    libgomp \
     libpq \
     postgresql-dev \
     && docker-php-ext-configure gd \
