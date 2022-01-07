@@ -27,6 +27,7 @@ RUN apk add --no-cache \
     --with-freetype \
     --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pcntl \
     && yes '' | pecl install imagick \
     && docker-php-ext-enable imagick \
     && pecl install redis \
