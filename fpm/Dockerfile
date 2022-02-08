@@ -20,12 +20,14 @@ RUN apk add --no-cache \
     libpng-dev \
     libzip \
     libzip-dev \
+    libgomp \
     libpq \
     postgresql-dev \
     && docker-php-ext-configure gd \
     --with-freetype \
     --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
+    && docker-php-ext-install pcntl \
     && yes '' | pecl install imagick \
     && docker-php-ext-enable imagick \
     && pecl install redis \
