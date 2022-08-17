@@ -1,4 +1,4 @@
-FROM php:7.4.27-fpm-alpine
+FROM php:7.4.30-fpm-alpine
 
 LABEL maintainer="Equipe grandChef <desenvolvimento@grandchef.com.br>"
 
@@ -27,9 +27,11 @@ RUN apk add --no-cache \
     --with-freetype \
     --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
-    && docker-php-ext-install pcntl \
+    && docker-php-ext-install -j$(nproc) pcntl \
     && yes '' | pecl install imagick \
     && docker-php-ext-enable imagick \
+    && docker-php-ext-install -j$(nproc) mysqli \
+    && docker-php-ext-enable mysqli \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && docker-php-ext-install -j$(nproc) \
