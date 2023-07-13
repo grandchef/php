@@ -29,6 +29,7 @@ RUN apk add --no-cache \
     --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd \
     && docker-php-ext-install pcntl \
+    && docker-php-ext-install bcmath \
     && yes '' | pecl install imagick \
     && docker-php-ext-enable imagick \
     && pecl install redis \
