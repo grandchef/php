@@ -2,7 +2,9 @@ FROM php:8.2.2-fpm-alpine3.16
 
 LABEL maintainer="Equipe grandChef <desenvolvimento@grandchef.com.br>"
 
-RUN apk add --no-cache \
+RUN apk update \
+    && apk upgrade curl libcurl \
+    && apk add --no-cache \
     linux-headers \
     wget \
     unzip \
