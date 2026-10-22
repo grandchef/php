@@ -1,4 +1,4 @@
-FROM php:8.2.2-fpm-alpine3.16
+FROM php:8.2.35-fpm-alpine3.24
 
 LABEL maintainer="Equipe grandChef <desenvolvimento@grandchef.com.br>"
 
@@ -17,7 +17,9 @@ RUN apk update \
     imagemagick-dev \
     bzip2 \
     bzip2-dev \
+    freetype \
     freetype-dev \
+    libjpeg-turbo \
     libjpeg-turbo-dev \
     libpng \
     libpng-dev \
